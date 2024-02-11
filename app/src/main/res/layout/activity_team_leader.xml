@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TeamLeaderActivity">
+    android:background="@color/gray"
+    tools:context=".Activity.TeamLeaderActivity">
 
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -83,8 +84,8 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/picture_3"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:padding="2dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -163,8 +164,8 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/picture_1"
-                            android:layout_width="137dp"
-                            android:layout_height="137dp"
+                            android:layout_width="117dp"
+                            android:layout_height="117dp"
                             android:padding="2dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -249,8 +250,8 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/picture_2"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:padding="2dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -321,12 +322,13 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/leader_rc_view"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="40dp"
+                android:paddingBottom="74dp"
+                android:clipToPadding="false"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/menu"
