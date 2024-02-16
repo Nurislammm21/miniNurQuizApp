@@ -9,12 +9,13 @@
     android:layout_marginEnd="24dp"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
-    android:textSize="16sp"
+    android:textSize="18sp"
+    android:textStyle="bold|italic"
     android:paddingStart="8dp"
     android:paddingEnd="8dp"
     android:textColor="@color/navy_blue"
     android:text="answer"
-    android:gravity="center_vertical"
+    android:gravity="center"
 
 
     >
